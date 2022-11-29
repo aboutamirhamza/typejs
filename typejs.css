@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+.heading {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.typejs{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    
+}
+
+.typejs::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: red;
+    animation: blink 2s linear infinite;
+    -webkit-animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
